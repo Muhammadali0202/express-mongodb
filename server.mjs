@@ -58,7 +58,7 @@ app.get('/users/:id', async (req, res) => {
     }
 });
 
-// Update: Update a user by ID
+// Update a user by ID
 app.put('/users/:id', async (req, res) => {
     try {
         const { name, email } = req.body;
