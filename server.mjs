@@ -10,14 +10,14 @@ app.use(express.json());
 const mongoUri = 'mongodb://localhost:27017/user_management';
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,
-    usegitUnifiedTopology: true,
+    useUnifiedTopology: true,
 }).then(() => {
     console.log('Connected to MongoDB');
 }).catch(err => {
     console.error('Error connecting to MongoDB: ', err.message);
 });
 
-// User Schema
+// Schema
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
