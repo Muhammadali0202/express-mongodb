@@ -74,7 +74,7 @@ app.put('/users/:id', async (req, res) => {
     }
 });
 
-// Delete: Remove a user by ID
+// Remove a user by ID
 app.delete('/users/:id', async (req, res) => {
     try {
         const deletedUser = await User.findByIdAndDelete(req.params.id);
