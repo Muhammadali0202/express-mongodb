@@ -6,11 +6,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection
+// connection
 const mongoUri = 'mongodb://localhost:27017/user_management';
 mongoose.connect(mongoUri, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    usegitUnifiedTopology: true,
 }).then(() => {
     console.log('Connected to MongoDB');
 }).catch(err => {
