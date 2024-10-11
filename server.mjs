@@ -47,7 +47,7 @@ app.get('/users', async (req, res) => {
     }
 });
 
-// Read: Get a single user by ID
+// Get a single user by ID
 app.get('/users/:id', async (req, res) => {
     try {
         const user = await User.findById(req.params.id);
