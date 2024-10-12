@@ -37,6 +37,10 @@ app.post('/users', async (req, res) => {
     }
 });
 
+app.get('/', async (req, res) => {
+   res.send("Hello world!")
+});
+
 // Get all users
 app.get('/users', async (req, res) => {
     try {
