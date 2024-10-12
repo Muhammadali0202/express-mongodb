@@ -1,16 +1,10 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "./server.mjs",
-        "use": "@vercel/node"
-      }
+      { "src": "api/server.mjs", "use": "@vercel/node" }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/",
-        "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
-      }
+      { "src": "/api/(.*)", "dest": "/api/server.mjs" }
     ]
   }
+  
